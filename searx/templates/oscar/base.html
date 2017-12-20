@@ -10,7 +10,7 @@
     <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1.0, user-scalable=1" />
     {% block meta %}{% endblock %}
-    <title>{% block title %}{% endblock %}{{ instance_name }}</title>
+    <title>{% block title %}{% endblock %}Lug-search</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css" />
     {% if cookies['oscar-style'] %}
@@ -29,7 +29,7 @@
       <script src="{{ url_for('static', filename='js/respond.min.js') }}"></script>
     <![endif]-->
     <link rel="icon" href="{{ url_for('static', filename='img/linux.png') }}">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" />
+    <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" /> -->
 
     {% block styles %}
     {% endblock %}

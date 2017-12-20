@@ -8,7 +8,7 @@
     margin-bottom: .8rem;;
     padding: .5rem;
 	box-shadow: 2px 2px 7px #cecece;
-    background: linear-gradient(to bottom right, #19c2e0 , #17d892);
+    background: linear-gradient(to right, #19c2e0 , #17d892);
 }.searx-navbar a,
 .searx-navbar a:hover
 {
@@ -144,7 +144,9 @@ input[type=checkbox]:not(:checked) + .label_hide_if_checked + .label_hide_if_not
     font-size: 16px;;
 
     margin-top: 0;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    padding-bottom: 9px;
+    border-bottom: 1px dashed #ececec;
 }.result_header .favicon
 {
     margin-bottom: -3px;
@@ -190,8 +192,10 @@ input[type=checkbox]:not(:checked) + .label_hide_if_checked + .label_hide_if_not
 .result-map
 {
     clear: both;
-
-    padding: 2px 4px;
+    padding: 10px 15px;
+    margin: 0 0 10px 0;
+    box-shadow: 0px 1px 6px #36373c47;
+    border-radius: 7px !important;
 }.result-default:hover,
 .result-code:hover,
 .result-torrent:hover,
@@ -377,18 +381,24 @@ input[type=checkbox]:not(:checked) + .label_hide_if_checked + .label_hide_if_not
     border-radius: 5px 0 0 5px !important;
     border-color: #d2d2d2;
     box-shadow: none;
-}#search_form .input-group-btn .btn
+}
+#q:focus{
+    box-shadow: 0px 2px 6px #e4e4e4;
+}
+#search_form .input-group-btn .btn
 {
     border: 0;
     background: linear-gradient(45deg,#13bcd4, #22e8b1);
     border-radius: 0 5px 5px 0 !important;
     color: #fff;
     box-shadow: 1px 1px 1px #d0d0d0;
+    transition: 0.35s;
 
 }#search_form .input-group-btn .btn:hover
 {
-    color: #fff;;
+    color: #fff;
     background-color: #2ecc71;
+    box-shadow: 3px 3px 9px #d0d0d0;
 }.custom-select
 {
     font-size: 1.2rem;
@@ -405,11 +415,17 @@ input[type=checkbox]:not(:checked) + .label_hide_if_checked + .label_hide_if_not
 }.search-margin
 {
     margin-bottom: .6em;
-}#advanced-search-container
+}
+label[for=check-advanced]:hover{
+    color: #000;
+}
+#advanced-search-container
 {
     display: none;
     clear: both;;
-
+    border-top: 1px solid #01d7d4;
+    border-bottom: 3px solid #01d7d4;
+    border-radius: 4px !important;
     margin-bottom: 1rem;
 
     text-align: left;
